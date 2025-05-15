@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Theo-Elect Global Consulting Ltd",
     images: [
       {
-        url: "https://www.yourdomain.com/og-image.jpg",
+        url: "https://www.theoelectconsulting.com.ng/opengraph-image.png",
         width: 1200,
         height: 630,
       },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Theo-Elect Global Consulting",
     description: "Driving Transparency, Accountability, and Ethical Excellence",
-    images: ["https://theoelectconsulting.com.ng/twitter-image.jpg"],
+    images: ["https://theoelectconsulting.com.ng/opengraph-image"],
   },
   robots: {
     index: true,
