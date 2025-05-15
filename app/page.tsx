@@ -204,7 +204,7 @@ export default function Home() {
           {[1, 2, 3, 4, 5].map((edition) => (
             <div
               key={edition}
-              className='dark:bg-gray-700 rounded-lg p-6 hover:shadow-md transition'>
+              className='bg-gray-100 dark:bg-gray-700 rounded-lg p-6 hover:shadow-md transition'>
               <h3 className='font-bold text-lg mb-2'>Edition {edition}</h3>
               <p className='text-sm text-gray-600 dark:text-gray-400 mb-4'>
                 Public Institutions & Anti-Corruption Measures
