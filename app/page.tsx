@@ -119,13 +119,25 @@ export default function Home() {
 
   return (
     <div className='w-full min-h-screen font-sans bg-white dark:bg-gray-900 text-navy-900 dark:text-white'>
+   
       {/* Theme Toggle */}
       <div className='fixed bottom-8 right-8 z-50'>
         <ThemeToggle />
       </div>
       {/* Hero Section */}
-      <header className='bg-navy-900 text-white py-20 px-8 text-center'>
-        <div className='max-w-4xl mx-auto'>
+      
+      <header className='bg-navy-900 text-white pb-20 px-4 text-center'>
+         <div className="flex mb-12 pt-4">
+            <div className="flex items-center gap-2">
+            <Image alt='' priority width={50} height={50} src='/logo.png' />
+            <div className="flex flex-col items-start leading-3">
+              <p className="font-bold text-xl">TheoElect</p>
+              <p className="tracking-widest">Consulting</p>
+            </div>
+            </div>
+          </div>
+        <div className='max-w-4xl mx-auto px-4'>
+         
           <h1 className='text-4xl md:text-5xl font-bold mb-4'>
             Driving Transparency, Accountability, and Ethical Excellence
           </h1>
@@ -231,8 +243,16 @@ export default function Home() {
                 <div
                   key={i}
                   className='bg-white/10 p-6 rounded-lg backdrop-blur-sm'>
-                  {item.img ? <div className="relative w-24 h-24 rounded-full overflow-hidden mb-4 mx-auto "><Image alt='' fill src={item.img} /></div> : <div className="flex items-center justify-center w-24 h-24 mx-auto rounded-full bg-gray-600 mb-4"><User size={50} /></div>}
-                  
+                  {item.img ? (
+                    <div className='relative w-24 h-24 rounded-full overflow-hidden mb-4 mx-auto '>
+                      <Image alt='' fill src={item.img} />
+                    </div>
+                  ) : (
+                    <div className='flex items-center justify-center w-24 h-24 mx-auto rounded-full bg-gray-600 mb-4'>
+                      <User size={50} />
+                    </div>
+                  )}
+
                   <h3 className='text-xl font-bold mb-2 text-center'>
                     {item.name}
                   </h3>
