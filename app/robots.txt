@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://theoelectconsulting.com.ng/sitemap.xml
