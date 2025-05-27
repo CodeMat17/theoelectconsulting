@@ -73,14 +73,48 @@ export default function Home() {
 
   const leadership = [
     {
-      img: "/olukile.png",
+      img: "/team/olukile.png",
       name: "Olukile Olusesan",
-      position: "Security Psychologist, Ex-Commissioner",
+      position: "Chief Vision Driver & Ex-Commissioner (ICPC)",
       experience: [
-        "M.Sc. Legal Criminology",
+        "M.Sc. Legal Criminology & Security Psychology, University of Ibadan",
+        "35+ years experience spanning administration, investigation, and training",
+        "Former Commissioner, Independent Corrupt Practices Commission (ICPC)",
         "Member, National Institute for Policy and Strategic Studies",
-        ,
-        "15+ years in governance consulting",
+        "Expert in Security Psychology, Administration & Governance",
+      ],
+    },
+    {
+      img: "",
+      name: "Dr. Bello Dauda O., fsi",
+      position: "Director, Administration and Human Resources (ICPC)",
+      experience: [
+        "Ph.D. Political Economy & Development Studies",
+        "Fellow, National Institute for Security Studies",
+        "Expert in Anti-Corruption Strategy & Organizational Ethics",
+        "Multiple Excellence Awards in Public Service",
+      ],
+    },
+    {
+      img: "",
+      name: "Justin Kuatsea",
+      position: "Deputy Director (Rtd.), ICPC",
+      experience: [
+        "B.Sc. Political Science, Ahmadu Bello University",
+        "Policy and Strategic Leadership - NIPSS, Kuru",
+        "Former Head, Anti-Corruption & Transparency Unit, ICPC",
+        "Expert in Policy Development and Anti-Corruption Strategies",
+      ],
+    },
+    {
+      img: "/team/ayo.jpg",
+      name: "Barrister Ayo Oluwasina",
+      position: "Legal and Management Consultant",
+      experience: [
+        "B.A. & Masters in Industrial Relations (OAU, UI)",
+        "LLB Law, University of Ibadan",
+        "25+ years consulting experience",
+        "Specialist in Organizational Transformation",
       ],
     },
     {
@@ -90,24 +124,22 @@ export default function Home() {
       experience: [
         "International training (RIPA, FBI)",
         "12+ years in anti-corruption enforcement",
-        ,
         "Specializes in legal compliance",
       ],
     },
     {
-      img: "",
+      img: "/team/ilabor.jpg",
       name: "Ilabor Samuel",
       position: "Technical Director",
       experience: [
         "PhD in Public Administration",
         "8+ years in research and policy",
-        ,
         "Data-driven solutions expert",
       ],
     },
     {
-      img: "",
-      name: "Olayinka A. Aiyegbayo ",
+      img: "/team/olayinka.png",
+      name: "Olayinka A. Aiyegbayo",
       position: "Security Psychologist, Ex-Commissioner",
       experience: [
         "Resident Commissioner, ICPC (Benue, Nasarawa, Plateau)",
@@ -119,25 +151,23 @@ export default function Home() {
 
   return (
     <div className='w-full min-h-screen font-sans bg-white dark:bg-gray-900 text-navy-900 dark:text-white'>
-   
       {/* Theme Toggle */}
       <div className='fixed bottom-8 right-8 z-50'>
         <ThemeToggle />
       </div>
       {/* Hero Section */}
-      
+
       <header className='bg-navy-900 text-white pb-20 px-4 text-center'>
-         <div className="flex mb-12 pt-4">
-            <div className="flex items-center gap-2">
+        <div className='flex mb-12 pt-4'>
+          <div className='flex items-center gap-2'>
             <Image alt='' priority width={50} height={50} src='/logo.png' />
-            <div className="flex flex-col items-start leading-3">
-              <p className="font-bold text-xl">TheoElect</p>
-              <p className="tracking-widest">Consulting</p>
-            </div>
+            <div className='flex flex-col items-start leading-3'>
+              <p className='font-bold text-xl'>TheoElect</p>
+              <p className='tracking-widest'>Consulting</p>
             </div>
           </div>
+        </div>
         <div className='max-w-4xl mx-auto px-4'>
-         
           <h1 className='text-4xl md:text-5xl font-bold mb-4'>
             Driving Transparency, Accountability, and Ethical Excellence
           </h1>
