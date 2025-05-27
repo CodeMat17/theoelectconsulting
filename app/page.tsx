@@ -157,25 +157,51 @@ export default function Home() {
       </div>
       {/* Hero Section */}
 
-      <header className='bg-navy-900 text-white pb-20 px-4 text-center'>
-        <div className='flex mb-12 pt-4'>
-          <div className='flex items-center gap-2'>
-            <Image alt='' priority width={50} height={50} src='/logo.png' />
-            <div className='flex flex-col items-start leading-3'>
-              <p className='font-bold text-xl'>TheoElect</p>
-              <p className='tracking-widest'>Consulting</p>
+      <header className='bg-navy-900 text-white'>
+        {/* Navigation Bar */}
+        <nav className='border-b border-white/10'>
+          <div className='max-w-6xl mx-auto px-4 py-4'>
+            <div className='flex justify-between items-center'>
+              {/* Logo Section */}
+              <div className='flex items-center gap-3'>
+                <Image
+                  alt='TheoElect Logo'
+                  priority
+                  width={60}
+                  height={60}
+                  src='/logo.png'
+                  className='object-contain'
+                />
+                <div className='flex flex-col'>
+                  <h1 className='font-bold text-2xl tracking-wide'>
+                    TheoElect
+                  </h1>
+                  <p className='text-sm tracking-widest text-gold-500'>
+                    Consulting
+                  </p>
+                </div>
+              </div>
+
+              {/* Contact Button */}
+              <button className='bg-gold-500 hover:bg-gold-600 text-navy-900 font-medium py-2 px-6 rounded-lg transition-all'>
+                <a href='mailto:theoelect@yahoo.com?subject=Consultation Request&body=Please provide details about your consultation needs.'>
+                  Contact Us
+                </a>
+              </button>
             </div>
           </div>
-        </div>
-        <div className='max-w-4xl mx-auto px-4'>
-          <h1 className='text-4xl md:text-5xl font-bold mb-4'>
+        </nav>
+
+        {/* Hero Content */}
+        <div className='max-w-4xl mx-auto px-4 py-20 text-center'>
+          <h2 className='text-4xl md:text-5xl font-bold mb-6 leading-tight'>
             Driving Transparency, Accountability, and Ethical Excellence
-          </h1>
-          <p className='text-xl mb-8'>
+          </h2>
+          <p className='text-xl mb-10 text-gray-300'>
             Empowering institutions through strategic governance,
             anti-corruption frameworks, and ethical intelligence.
           </p>
-          <button className='bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold py-3 px-8 rounded-lg transition'>
+          <button className='bg-white hover:bg-gray-100 text-navy-900 font-bold py-3 px-8 rounded-lg transition-all shadow-lg'>
             <a href='mailto:theoelect@yahoo.com?subject=Consultation Request&body=Please provide details about your consultation needs.'>
               Schedule a Consultation
             </a>
