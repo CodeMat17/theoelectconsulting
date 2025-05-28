@@ -85,7 +85,7 @@ export default function Home() {
       ],
     },
     {
-      img: "",
+      img: "/team/dauda.png",
       name: "Dr. Bello Dauda O., fsi",
       position: "Director, Administration and Human Resources (ICPC)",
       experience: [
@@ -96,7 +96,7 @@ export default function Home() {
       ],
     },
     {
-      img: "",
+      img: "/team/justin.jpg",
       name: "Justin Kuatsea",
       position: "Deputy Director (Rtd.), ICPC",
       experience: [
