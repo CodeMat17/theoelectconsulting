@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
 import { ThemeProvider } from "@/theme/theme=provider";
+import type { Metadata } from "next";
 import localFont from "next/font/local";
+import JsonLd from "./components/JsonLd";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -15,37 +16,58 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Theo-Elect Global Consulting - Anti-Corruption & Governance Experts",
-  description:
-    "Promoting transparency, accountability, and ethical excellence in public and private institutions",
-  keywords: [
-    "anti-corruption consultancy Nigeria",
-    "governance training",
-    "ethics compliance",
-    "corruption prevention",
-    "public sector reform",
-  ],
-  openGraph: {
-    type: "website",
-    locale: "en_NG",
-    url: "https://theoelectconsulting.com.ng",
-    siteName: "Theo-Elect Global Consulting Ltd",
-    images: [
-      {
-        url: "https://www.theoelectconsulting.com.ng/opengraph-image.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
+  title: {
+    template: "%s | TheoElect Consulting",
+    default: "TheoElect Consulting - Anti-Corruption Research & Consultancy",
   },
-  alternates: {
-    canonical: "https://theoelectconsulting.com.ng",
+  description:
+    "Leading anti-corruption consultancy firm specializing in governance, transparency, and institutional reforms. Access expert insights on corruption prevention and ethical leadership.",
+  keywords: [
+    "anti-corruption books",
+    "corruption prevention",
+    "anti-corruption agencies",
+    "Nigerian anti-corruption",
+    "governance consulting",
+    "institutional reforms",
+    "ethical leadership",
+    "corruption risk assessment",
+    "public sector transparency",
+    "anti-corruption research",
+    "Olukile Olusesan",
+    "TheoElect Consulting",
+  ],
+  authors: [{ name: "Olukile Olusesan" }, { name: "TheoElect Consulting" }],
+  creator: "TheoElect Consulting",
+  publisher: "TheoElect Consulting",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    title: "TheoElect Consulting - Anti-Corruption Research & Consultancy",
+    description:
+      "Expert insights on corruption prevention, institutional reforms, and ethical leadership in Nigeria.",
+    url: "https://theoelectconsulting.com.ng",
+    siteName: "TheoElect Consulting",
+    locale: "en_NG",
+    type: "website",
+    images: "/opengraph-image.jpg",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Theo-Elect Global Consulting",
-    description: "Driving Transparency, Accountability, and Ethical Excellence",
-    images: ["https://theoelectconsulting.com.ng/opengraph-image"],
+    title: "TheoElect Consulting - Anti-Corruption Research & Consultancy",
+    description:
+      "Expert insights on corruption prevention, institutional reforms, and ethical leadership in Nigeria.",
+    creator: "@theoelect",
+    images: "/opengraph-image.jpg",
+  },
+  verification: {
+    google: "L71FVRFZhFbomfJBZzyeH3zsFIca-2yUE0H-zX3eNd0",
+  },
+  category: "Consulting",
+  alternates: {
+    canonical: "https://theoelectconsulting.com.ng",
   },
   robots: {
     index: true,
@@ -65,6 +87,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
+      <head>
+        <JsonLd />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ThemeProvider

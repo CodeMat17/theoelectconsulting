@@ -1,0 +1,13 @@
+# Allow all web crawlers
+User-agent: *
+Allow: /
+
+# Prevent crawling of next.js specific files
+Disallow: /_next/
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://theoelect.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10 
